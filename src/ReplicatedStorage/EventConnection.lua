@@ -11,7 +11,7 @@ EventConnection.validateProps = t.strictInterface({
 })
 
 function EventConnection:init()
-		self.connection = nil
+	self.connection = nil
 end
 
 function EventConnection:didMount()
