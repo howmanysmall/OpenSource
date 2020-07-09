@@ -1,6 +1,6 @@
 local Roact = require(script.Parent.Parent.Parent.Roact)
 local RoactMaterial = require(script.Parent.Parent)
-local Promise = require(script.Parent.Parent.Parent.ePromise)
+local Promise = require(script.Parent.Parent.Parent.Promise)
 
 local ELEVATIONS = {1, 2, 3, 4, 6, 8, 9, 12, 16}
 
