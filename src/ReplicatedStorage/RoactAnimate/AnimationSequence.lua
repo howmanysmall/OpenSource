@@ -1,4 +1,4 @@
-local Promise = require(script.Parent.Parent.ePromise)
+local Promise = require(script.Parent.Parent.Promise)
 local Signal = require(script.Parent.Signal)
 
 local AnimationSequence = {}
