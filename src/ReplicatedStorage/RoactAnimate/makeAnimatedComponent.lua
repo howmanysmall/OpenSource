@@ -25,6 +25,7 @@ local function makeAnimatedComponent(toWrap)
 					if self._rbx then
 						if _currentTween then
 							_currentTween:Cancel()
+							_currentTween = _currentTween:Destroy()
 						end
 
 						local tween = TweenService:Create(self._rbx, tweenInfo, {[key] = to})
@@ -34,6 +35,8 @@ local function makeAnimatedComponent(toWrap)
 						_currentTween.Completed:Connect(function(status)
 							if status == Enum.PlaybackState.Completed then
 								value:FinishAnimation()
+								tween = nil
+								_currentTween = _currentTween:Destroy()
 							end
 						end)
 					end
